@@ -20,7 +20,22 @@ module.exports = {
   /*
   ** Build configuration
   */
+  buildDir: '../functions/nuxt',
   build: {
+    publicPath: '/public/',
+    vendor: ['ismorphic-fetch'],
+    extractCSS: true,
+    babel: {
+      presets: [
+        'env'
+      ],
+      plugins: [
+        ['transform-runtime', {
+          'polyfill': true,
+          'regenerator': true,
+        }],
+      ]
+    },
     /*
     ** Run ESLint on save
     */
