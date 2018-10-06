@@ -11,7 +11,9 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "fullcalendar": "^3.9.0",
+    "vue": "^2.5.2",
+    "vue-full-calendar": "^2.7.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
